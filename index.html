@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+  <!--Following is the block for google auth login id derived from google credentials page-->
 <head>
   <title>Google Auth Demo</title>
   <meta name="google-signin-client_id" content="848623517737-85i19p9pcal01a99ebdrf5eu854sjkdo.apps.googleusercontent.com">
@@ -12,19 +13,20 @@
 
   <body>
 
-      
+    <!--Following is the block for navigation bar at top of the page which has logo image and various options-->  
     
     <div class="navbar">
       <div class=" main_logo">
         <a href='#' class="logo_li">
           <span class='span-logo'>
-             <img src='https://i.pinimg.com/736x/c0/b2/ab/c0b2ab01793f5a84ee25e7e1bbf41cd0.jpg'/>
+             <img src='https://i.pinimg.com/736x/c0/b2/ab/c0b2ab01793f5a84ee25e7e1bbf41cd0.jpg'/> <!--logo image-->
           </span>
         </a>
       </div>
         
       <a style="font-size: x-large; font-style: oblique; color: rgb(211, 192, 212); padding-top: 0px; padding-left: 1px; padding-right: 26px;">Sachet</style></a>
 
+      <!--dropdown class and all dropdown options present in nav bar-->
       <div class="dropdown">
         <button class="dropbtn">Home
           <i class="fa fa-caret-down"></i>
@@ -68,6 +70,7 @@
       </div> 
       <a href="#contacts">Contacts</a>
      
+      <!--search box class present at nav bar-->
       <div class="search-container">
         <form action="/action_page.php">
           <input type="text" placeholder="Search.." name="search">
@@ -78,8 +81,10 @@
 </div>
     </div>
 
+    <!--Main class which contains all sliders and images and google sign in link-->
    <div class="container">
      
+    <!--class row containing slider-->
       <div class="row" style="width: 60%;
       height: 80%;
       margin-top: 50px;">
@@ -104,6 +109,8 @@
       <div class="slide slide-3"></div>
     </div>
     </div>
+
+    <!--class row containing text image and google login link-->
     <div class="row" style="margin-top: 30px;">
       <div class="egg" style="margin-top: 10px;">
         <div class="text" style="font-style: oblique; font-size: 89%; color: rgb(82, 39, 60);"><h2>Sachet<br><br>The youth uprising:<br> Lets bring the change!!<br></h2></div>
@@ -117,8 +124,8 @@
   </div>
   </div>
   
-    
-
+   <!--css part--> 
+<!-- contains all the styling of classes used above-->
     <style>
       html, body {
   width: 100%;
@@ -139,7 +146,9 @@ h2 {
    height: 50px;
 }
 
-.egg {
+   /*styling of text image*/
+
+   .egg {
     width: 286px;
     height: 400px;
     background: #508b75;
@@ -152,6 +161,8 @@ img {
   max-width: 80%;
 }
 
+/*styling of the whole main class container*/
+
 .container{
   background-color: rgb(153, 79, 120);
   display:flex;
@@ -162,6 +173,8 @@ img {
   overflow: hidden; 
   text-align: center;
 }
+
+/*styling of slider*/
 
 .slider-container{
   margin-left: 120px;
@@ -174,9 +187,11 @@ img {
 }
 
 
+/*styling of google signin link*/
 
 .g-signin2{margin-left:20%; margin-top: 30px}
 
+/*sliding of menu bar at bottom of slider*/
 .menu {
   position: absolute;
   left: 0;
@@ -215,6 +230,7 @@ img {
   z-index: 100;
   transition: left .65s ease-out;
 }
+/*slider images*/
 
 .slide-1 {
   background-image: url("https://i.dailymail.co.uk/i/pix/2016/07/27/16/36A490C300000578-0-image-a-10_1469634536677.jpg");
@@ -231,6 +247,8 @@ img {
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/*styling of nav bar*/
 
 .navbar {
   overflow: hidden;
@@ -297,6 +315,7 @@ body {
   display: block;
 }
 
+/*styling of logo at nav bar*/
 
 .span-logo {
    margin-top:-100px;
@@ -319,6 +338,8 @@ div.main_logo{
    width:100%; 
    height:auto; 
 }
+
+/*styling of search box at nav bar*/
 
 .navbar .search-container {
   float: right;
