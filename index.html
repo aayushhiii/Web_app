@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Google Auth Demo</title>
+  <meta name="google-signin-client_id" content="848623517737-85i19p9pcal01a99ebdrf5eu854sjkdo.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <body>
+
+      
+    
+    <div class="navbar">
+      <div class=" main_logo">
+        <a href='#' class="logo_li">
+          <span class='span-logo'>
+             <img src='../../logo.jpg'/>
+          </span>
+        </a>
+      </div>
+        
+      <a style="font-size: x-large; font-style: oblique; color: rgb(211, 192, 212); padding-top: 0px; padding-left: 1px; padding-right: 26px;">Sachet</style></a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Home
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Pages
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Services
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Blog
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> 
+      <a href="#contacts">Contacts</a>
+     
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      
+</div>
+    </div>
+
+   <div class="container">
+     
+      <div class="row" style="width: 60%;
+      height: 80%;
+      margin-top: 50px;">
+     <div class="slider-container"> 
+      <div class="menu">
+      
+                 
+        <label for="slide-dot-1"></label>
+        <label for="slide-dot-2"></label>
+        <label for="slide-dot-3"></label>
+      </div>
+      
+      
+    
+      <input id="slide-dot-1" type="radio" name="slides" checked>
+      <div class="slide slide-1"></div>
+    
+      <input id="slide-dot-2" type="radio" name="slides">
+      <div class="slide slide-2"></div>
+    
+      <input id="slide-dot-3" type="radio" name="slides">
+      <div class="slide slide-3"></div>
+    </div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+      <div class="egg" style="margin-top: 10px;">
+        <div class="text" style="font-style: oblique; font-size: 89%; color: rgb(82, 39, 60);"><h2>Sachet<br><br>The youth uprising:<br> Lets bring the change!!<br></h2></div>
+        
+         <div class="g-signin2" style=" position: absolute;
+         top: 53%;
+         left: 51%;
+         transform: translate(-50%, -50%);" >
+    </div>
+      </div>
+  </div>
+  </div>
+  
+    
+
+    <style>
+      html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+  margin-left: 0px;
+}
+
+h2 {
+   position: absolute;
+   top: 150px;
+   left: 400;
+   width: 100%;
+   margin: 0 auto;
+   width: 300px;
+   height: 50px;
+}
+
+.egg {
+    width: 286px;
+    height: 400px;
+    background: #508b75;
+    display: block;
+    -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    }
+
+img {
+  max-width: 80%;
+}
+
+.container{
+  background-color: rgb(153, 79, 120);
+  display:flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden; 
+  text-align: center;
+}
+
+.slider-container{
+  margin-left: 120px;
+  margin-top: 10px;
+  height: 80%;
+  width: 80%;
+  position: relative;
+  overflow: hidden; 
+  text-align: center;
+}
+
+
+
+.g-signin2{margin-left:20%; margin-top: 30px}
+
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  bottom: 0;
+}
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 .2em 1em;
+  
+  }
+
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s .75s;
+}
+
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left .65s ease-out;
+}
+
+.slide-1 {
+  background-image: url("../../work1.jpg");
+}
+.slide-2 {
+  background-image: url("../../work6.jpeg");
+}
+.slide-3 {
+  background-image: url("../../work12.jpg");
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(153, 79, 120);
+  margin-left:0%
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top:3%
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-top:3%
+}
+
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(112, 127, 146);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.span-logo {
+   margin-top:-100px;
+   display: inline-block;
+   vertical-align: bottom;
+   height: 30px;
+   width: 70px;
+   margin-top:10px;
+   margin-bottom: 25px;
+
+}
+div.main_logo{ 
+    padding:0px; 
+    float:left
+}
+#nav div a.logo_li{ 
+  opacity:1
+}
+.span-logo img{ 
+   width:100%; 
+   height:auto; 
+}
+
+.navbar .search-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 29px;
+  font-size: 17px;
+  border: none;
+}
+
+.navbar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 29px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .search-container {
+    float: none;
+  }
+  .navbar a, .navbar input[type=text], .navbar .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 80%;
+    margin: 0;
+    padding: 14px;
+  }
+  .navbar input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+    </style>
+</body>
+</html>
