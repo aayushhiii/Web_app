@@ -1,6 +1,6 @@
 # Web_app
 https://aayushhiii.github.io/Web_app/       <br>
-This repository contains a working web app with a Google Auth Login system hossten on Github platform.
+This repository contains a working web app with a Google Auth Login system hosted on Github platform.
 
 # Getting Started
 Worked on VS Code editor<br>
